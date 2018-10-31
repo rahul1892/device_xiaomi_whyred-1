@@ -72,6 +72,23 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# Blobs (Only for NOS)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilds/vendor/lib/libspl.so:vendor/lib/libspl.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib/libqservice.so:vendor/lib/libqservice.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib/libqdutils.so:vendor/lib/libqdutils.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib/libsdmutils.so:vendor/lib/libsdmutils.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib/libqdMetaData.so:vendor/lib/libqdMetaData.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so:vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib/rfsa/adsp/dirac_resource.so:vendor/lib/rfsa/adsp/dirac_resource.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib/rfsa/adsp/libdirac-capiv2.so:vendor/lib/rfsa/adsp/libdirac-capiv2.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib64/libspl.so:vendor/lib64/libspl.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib64/libqservice.so:vendor/lib64/libqservice.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib64/libqdutils.so:vendor/lib64/libqdutils.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib64/libsdmutils.so:vendor/lib64/libsdmutils.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib64/libqdMetaData.so:vendor/lib64/libqdMetaData.so \
+    $(LOCAL_PATH)/prebuilds/vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so:vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
