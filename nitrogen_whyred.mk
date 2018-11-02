@@ -22,9 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit from custom vendor
-$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
-
 # Inherit some common NitrogenOS Stuffs
 $(call inherit-product, vendor/nitrogen/products/common.mk)
 
